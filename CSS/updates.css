@@ -1,0 +1,27 @@
+#headerLine{
+    margin-left: 2vw;
+}
+
+h3{
+    margin-top: 5vh;
+}
+
+#head-links{
+    display: table;
+    margin: auto;
+    padding-left: -2vw;
+}
+
+ul#links li{
+    display: inline;
+    padding: 3vh 2vw 3vh 2vw;
+}
+
+ul#links a{
+    color: black;
+    text-decoration: none;
+}
+
+ul#links a:hover{
+    color: blue;
+}

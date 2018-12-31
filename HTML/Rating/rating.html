@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rating</title>
+    <script type="text/javascript" src="rating.js"></script>
+    <link rel="stylesheet" type="text/css" href="rating.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+</head>
+<body>
+
+<div class="rating">
+    <span><input type="radio" name="rating" id="str5" value="5" onClick="addFive()"><label for="str5"></label></span>
+    <span><input type="radio" name="rating" id="str4" value="4" onClick="addFour()"><label for="str4"></label></span>
+    <span><input type="radio" name="rating" id="str3" value="3" onClick="addThree()"><label for="str3"></label></span>
+    <span><input type="radio" name="rating" id="str2" value="2" onClick="addTwo()"><label for="str2"></label></span>
+    <span><input type="radio" name="rating" id="str1" value="1" onClick="addOne()"><label for="str1"></label></span>
+</div>
+
+<div id="average"></div>
+
+<canvas id="myChart" width="400" height="400"></canvas>
+
+<script>
+    ctx = document.getElementById('myChart').getContext('2d');
+    chart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                label: 'Colors',
+                data: [map1['str1'], map1['str2'], map1['str3'], map1['str4'], map1['str5']],
+                backgroundColor: ["#0074D9", "#FF4136", "#2ECC40", "#FF851B", "#7FDBFF"]
+            }],
+            labels: ['1 Star','2 Stars','3 Star','4 Star','5 Star']
+        },
+        options: {
+            responsive: true,
+            title:{
+                display: true,
+                text: "Color test"
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

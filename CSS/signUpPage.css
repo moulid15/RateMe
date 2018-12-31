@@ -1,0 +1,186 @@
+*{
+    margin: 0px;
+}
+
+.textBoxCircular{
+    border-radius: 8px;
+}
+
+#logo-placeholder{
+    font-family: 'Seaweed Script', cursive;
+}
+
+/*Cleaned Up */
+/* DO NOT DELETE!
+.loginPage-container{
+    background-color: rgba(213, 150, 87, 0.9);
+    display: flex;
+    padding: 1vh 5vw 1vh 5vw;
+    justify-content: space-between;
+}
+*/
+
+.loginPage-container{
+    position: absolute;
+    width: 80%;
+    top: 3vh;
+    left: 4.5vw;
+    display: flex;
+    padding: 1vh 5vw 1vh 5vw;
+    justify-content: space-between;
+}
+
+#headerUnderLine{
+    height: 0.2vw;
+    color: white;
+    background-color: white;
+    position: absolute;
+    width: 75%;
+    top: 12vh;
+    left: 12.5%;
+    border: none;
+}
+
+/* Header CSS */
+.headFontSize{
+    font-size: 1vw;
+}
+
+#userIdLabel{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+#passwordLabel{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-left: 27%;
+}
+
+#logIn{
+    background-color: black;
+    box-shadow: 2px 2px rgba(255,255,255,0.25);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9vw;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: white;
+}
+
+#skyBlueLine{
+    margin-top: 0.5%;
+}
+
+/*SIGN UP*/
+
+.userInfoContainer{
+    position: absolute;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    padding-top: 5vw;
+    top: 35vh;
+    left: 7vw;
+    height: 20vh;
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.3);
+    box-shadow: 4px 6px rgba(30,30,30,0.5);
+}
+
+#signUpImg{
+    width: 100%;
+    height: 80vh;
+}
+
+#signUpText{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: black;
+    text-decoration: underline overline;
+    text-decoration-color: white;
+    position: absolute;
+    top: 38vh;
+    left: 9.7vw;
+    z-index: 2;
+}
+
+#signUpPersuasion{
+    font-family: 'Seaweed Script', cursive;
+    font-size: 5vw;
+    font-style: oblique;
+    text-decoration: underline overline;
+    text-decoration-color: #fbf8ff;
+    color: #000000;
+    position: absolute;
+    top: 20vh;
+    right: 30vw;
+}
+
+#createAcc{
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 5% 5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.75vw;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*Descriptions*/
+#whyHeader{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 3.5vw;
+    text-decoration: underline overline;
+    text-align: center;
+}
+
+#whyDescription{
+    margin-left: 26vw;
+    margin-right: 24vw;
+    font-size: 1.5vw;
+    margin-bottom: 5%;
+}
+
+/*Business stuff*/
+#business-info\"{
+    display: table;
+    margin: auto;
+}
+
+ul#business-info-items li{
+    display: inline;
+    padding: 3vh 2vw 4vh 2vw;
+}
+
+ul#business-info-items li a:hover{
+    color: #000cff;
+}
+
+#businessOverline{
+    height: 0.1vw;
+    color: #404040;
+    background-color: #404040;
+    width: 100%;
+    border: none;
+    margin-bottom: 2%;
+}

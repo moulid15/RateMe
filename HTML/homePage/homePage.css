@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+}
+
+.navBar{
+    background-color: rgba(219, 219, 0, 0.6);
+    padding: 15px 0px 15px 0px;
+}
+
+#logo{
+    font-size: 50px !important;
+    font-weight: bold;
+    text-shadow:-1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#nav{
+    list-style-type: none;
+    overflow: hidden;
+    color: white !important;
+}
+
+#nav li{
+    float: left;
+    font-size: 20px;
+}
+
+#nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#nav li a:hover{x
+    background-color: rgb(256,256,256);
+}

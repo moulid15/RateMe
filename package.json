@@ -1,0 +1,27 @@
+{
+  "name": "WebstormProjects",
+  "version": "1.0.0",
+  "dependencies": {
+    "react": "latest",
+    "react-dom": "latest",
+    "browserslist": "^4.3.6",
+    "babel-runtime": "^6.26.0"
+  },
+  "description": "I wanna be the very best\r Like no one ever was\r To catch them is my real test\r To train them is my cause",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Musaiyab-Ali/Exceed.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Musaiyab-Ali/Exceed/issues"
+  },
+  "homepage": "https://github.com/Musaiyab-Ali/Exceed#readme"
+}

@@ -1,0 +1,174 @@
+*{
+    margin: 0px;
+}
+
+.loginPage-container{
+    background-color: #fa6a00;
+
+}
+
+/* Header CSS */
+header{
+    margin-left: 8%;
+    margin-right: 8%;
+    display: flex;
+    align-items: center;
+}
+
+#logo-placeholder{
+    font-family: 'Seaweed Script', cursive;
+}
+
+.headFontSize{
+    font-size: 1vw;
+}
+
+#userIdLabel{
+    font-weight: bold;
+    margin-right:28%;
+    margin-left: -6%;
+}
+
+#passwordLabel{
+    font-weight: bold;
+}
+
+.userInfo{
+    margin-top: 1.5%;
+    margin-left: 55%;
+}
+
+#userId{
+    margin-left: -6%;
+    margin-right: 6%;
+}
+
+#userPassword{
+    margin-right: 2%;
+}
+
+.textBoxCircular{
+    width: 35%;
+    border-radius: 8px;
+}
+
+#signUpLink{
+    font-weight: bold;
+    font-size: 1vw;
+    margin-left: 38.5%;
+}
+
+.button{
+    background-color: rgb(138, 69, 0);
+    box-shadow: 1.5px 2px;
+    border: 0.5px solid navajowhite;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9vw;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: white;
+}
+
+#skyBlueLine{
+    margin-top: 0.5%;
+}
+
+/*Slider Image CSS*/
+hr {
+    display:block;
+    background-color: rgb(200, 49, 0);
+    width: 80%;
+    margin: auto;
+}
+
+.slide-container{
+    width: 800px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.image-container{
+    width: 3200px;
+    height: 600px;
+    position: relative;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+}
+
+.slider-image{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.button-container{
+    top: -5%;
+    position: relative;
+}
+
+.slider-button{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: white;
+    border: solid black;
+
+}
+
+#slider-image-1:target ~ .image-container{
+    left: 0px;
+}
+
+#slider-image-2:target ~ .image-container{
+    left: -800px;
+}
+
+#slider-image-3:target ~ .image-container{
+    left: -1600px;
+}
+
+#slider-image-4:target ~ .image-container{
+    left: -2400px;
+}
+
+h3{
+    background-color: black;
+}
+
+/*Description Section CSS*/
+#description-container{
+    margin: 10vh 24vw 15vh 24vw;
+}
+
+/*Business stuff CSS*/
+#business-info\"{
+    display: table;
+    margin: auto;
+}
+
+ul#business-info-items li{
+    display: inline;
+    padding: 3vh 2vw 3vh 2vw;
+}
+
+ul#business-info-items li a:hover{
+    color: #000cff;
+}

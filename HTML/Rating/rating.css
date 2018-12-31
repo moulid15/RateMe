@@ -1,0 +1,39 @@
+.rating {
+    float:left;
+    width:300px;
+}
+
+.rating span { float:right; position:relative; }
+.rating span input {
+    position:absolute;
+    top:0px;
+    left:0px;
+    opacity:0;
+}
+
+.rating span label {
+    display:inline-block;
+    width:30px;
+    height:30px;
+    text-align:center;
+    color:blue;
+    background:lightblue;
+    font-size:30px;
+    margin-right:2px;
+    line-height:30px;
+    border-radius:50%;
+    -webkit-border-radius:10%;
+}
+
+.rating span:hover ~ span label,
+.rating span:hover label,
+.rating span.checked label,
+.rating span.checked ~ span label {
+    background: rgb(0, 80, 221);
+    color:rgb(37, 83, 163);
+}
+
+#myChart{
+    border: solid;
+    transform: scale(0.5, 0.5);
+}

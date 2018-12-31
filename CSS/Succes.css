@@ -1,0 +1,10 @@
+*{
+    margin: 0px;
+}
+#logo-placeholder{
+    border-style: outset;
+    font-style: italic;
+    font-family: 'Galada', fantasy;
+    font-size: 40px;
+
+}
