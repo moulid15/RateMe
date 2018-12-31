@@ -2,11 +2,11 @@ let total = Number(0);
 let count = 0;
 
 let map1 = {
-    "str5" : 34,
-    "str4" : 70,
-    "str3" : 80,
-    "str2" : 10,
-    "str1" : 8,
+    "str5" : 0,
+    "str4" : 0,
+    "str3" : 0,
+    "str2" : 0,
+    "str1" : 0,
 };
 
 function addFive(){
@@ -14,7 +14,8 @@ function addFive(){
     count += 1;
     map1["str5"] += 1;
     document.getElementById('average').innerHTML = "Average: " + average();
-
+    myChart.data.datasets[0].data[4]=map1['str5'];
+    myChart.update();
 }
 
 function addFour(){
@@ -22,7 +23,8 @@ function addFour(){
     count += 1;
     map1["str4"] += 1;
     document.getElementById('average').innerHTML = "Average: " + average();
-
+    myChart.data.datasets[0].data[3]=map1['str4'];
+    myChart.update();
 }
 
 function addThree(){
@@ -30,7 +32,8 @@ function addThree(){
     count += 1;
     map1["str3"] += 1;
     document.getElementById('average').innerHTML = "Average: " + average();
-
+    myChart.data.datasets[0].data[2]=map1['str3'];
+    myChart.update();
 }
 
 function addTwo(){
@@ -38,7 +41,8 @@ function addTwo(){
     count += 1;
     map1["str2"] += 1;
     document.getElementById('average').innerHTML = "Average: " + average();
-
+    myChart.data.datasets[0].data[1]=map1['str2'];
+    myChart.update();
 }
 
 function addOne(){
@@ -46,26 +50,12 @@ function addOne(){
     count += 1;
     map1["str1"] += 1;
     document.getElementById('average').innerHTML = "Average: " + average();
-
+    myChart.data.datasets[0].data[0]=map1['str1'];
+    myChart.update();
 }
 
-function average(){
+function average() {
     let average = total / count;
     return average.toFixed(2);
 }
 
-function addData(chart, label, data) {
-    chart.data.labels.push(label);
-    chart.data.datasets.forEach((dataset) => {
-        dataset.data.push(data);
-    });
-    chart.update();
-}
-
-function removeData(chart) {
-    chart.data.labels.pop();
-    chart.data.datasets.forEach((dataset) => {
-        dataset.data.pop();
-    });
-    chart.update();
-}
