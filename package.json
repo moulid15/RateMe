@@ -1,11 +1,13 @@
 {
-  "name": "WebstormProjects",
+  "name": "RateMe",
   "version": "1.0.0",
   "dependencies": {
-    "react": "latest",
-    "react-dom": "latest",
+    "@babel/runtime": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
     "browserslist": "^4.3.6",
-    "babel-runtime": "^6.26.0"
+    "react": "latest",
+    "react-dom": "latest"
   },
   "description": "I wanna be the very best\r Like no one ever was\r To catch them is my real test\r To train them is my cause",
   "main": "index.js",
@@ -15,13 +17,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Musaiyab-Ali/Exceed.git"
+    "url": "git+https://github.com/moulid15/RateMe.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Musaiyab-Ali/Exceed/issues"
+    "url": "https://github.com/moulid15/RateMe/issues"
   },
-  "homepage": "https://github.com/Musaiyab-Ali/Exceed#readme"
+  "homepage": "https://github.com/moulid15/RateMe#readme"
 }
