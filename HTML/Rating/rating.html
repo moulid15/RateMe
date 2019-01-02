@@ -6,20 +6,53 @@
     <script type="text/javascript" src="rating.js"></script>
     <link rel="stylesheet" type="text/css" href="rating.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
 </head>
 <body>
+<header>
 
-<div class="rating">
-    <span><input type="radio" name="rating" id="str5" value="5" onClick="addFive()"><label for="str5"></label></span>
-    <span><input type="radio" name="rating" id="str4" value="4" onClick="addFour()"><label for="str4"></label></span>
-    <span><input type="radio" name="rating" id="str3" value="3" onClick="addThree()"><label for="str3"></label></span>
-    <span><input type="radio" name="rating" id="str2" value="2" onClick="addTwo()"><label for="str2"></label></span>
-    <span><input type="radio" name="rating" id="str1" value="1" onClick="addOne()"><label for="str1"></label></span>
+<div class="header">
+
+    <h1>cover pic herer</h1>
 </div>
 
-<div id="average"></div>
+<div class="col-3 col-s-12">
+    <div class="rating">
+        <span><input type="radio" name="rating" id="str5" value="5" onClick="addFive()"><label for="str5"></label></span>
+        <span><input type="radio" name="rating" id="str4" value="4" onClick="addFour()"><label for="str4"></label></span>
+        <span><input type="radio" name="rating" id="str3" value="3" onClick="addThree()"><label for="str3"></label></span>
+        <span><input type="radio" name="rating" id="str2" value="2" onClick="addTwo()"><label for="str2"></label></span>
+        <span><input type="radio" name="rating" id="str1" value="1" onClick="addOne()"><label for="str1"></label></span>
+    </div>
 
-<canvas id="myChart" width="400" height="400"></canvas>
+    <div id="average"></div>
+    <canvas id="myChart" width="400" height="400"></canvas>
+
+    <div class='pic'> picture</div>
+    <div class="bio">
+        <ul class=ulbio>
+            <li class="_1zw6 _md0 _5h-n _5vb9">stuff</li>
+        </ul>
+    </div>
+</div>
+</div>
+
+
+
+<div class="row">
+
+
+    <div class="footer">
+
+
+
+    </div>
+</div>
+</header>
+
+
+
+
 
 <script>
     ctx = document.getElementById('myChart').getContext('2d');
