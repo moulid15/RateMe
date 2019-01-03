@@ -1,13 +1,11 @@
 .rating {
-    float:left;
-    width:300px;
+    text-align: center;
+    display: inline-block;
 }
 
 .rating span { float:right; position:relative; }
 .rating span input {
     position:absolute;
-    top:0px;
-    left:0px;
     opacity:0;
 }
 
@@ -15,15 +13,11 @@
     display:inline-block;
     width:30px;
     height:30px;
-    text-align:center;
     color:blue;
     background:lightseagreen;
-    font-size:30px;
     margin-right:2px;
-    line-height:30px;
     border-radius:50%;
     -webkit-border-radius:10%;
-    margin-top:10px;
 }
 
 .rating span:hover ~ span label,
@@ -33,12 +27,6 @@
     background: rgb(0, 80, 221);
     color:rgb(37, 83, 163);
 }
-
-#myChart{
-
-    transform: scale(0.5, 0.5);
-}
-
 
 body{
     background: linear-gradient(to right, lightseagreen, blue);;
@@ -50,7 +38,6 @@ body{
 
     box-shadow: 0 50px 50px rgba(0,0,0,0.42), 0 220px 217px rgba(0,0,0,0.44);
 }
-
 
 .menu li:hover {
     background-color: #0099cc;
@@ -69,15 +56,16 @@ body{
 }
 
 
-.pic{
+#profile{
     background: #0099cc;
-    padding: 150px;
+    padding: 75px;
     color: #ffffff;
     text-align: center;
     font-size: 14px;
     box-shadow: 0 50px 50px rgba(0,0,0,.10), 0 50px 50px rgba(0,0,0,0.50);
-    margin-top:-400px;
-
+    width:200px;
+    height:200px;
+    border:solid;
 }
 .ulbio{
     margin-right:5px;
@@ -120,4 +108,8 @@ body{
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+}
+
+#rating_container{
+    text-align: center;
 }
