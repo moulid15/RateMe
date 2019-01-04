@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log In</title>
+    <link rel="stylesheet" type="text/css" href="logInPage.css">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Poppins|Seaweed+Script" rel="stylesheet">
+    <script type="text/javascript" src="loginPage.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="loginPage-container">
+
+<header id="header">
+    <div id="logo-container">
+        <h1 id="logo-placeholder">RateMe!</h1>
+    </div>
+
+    <div class="userInfo">
+        <form action="../success.html">
+            <!-- Javascript to check if text === email or username -->
+            <label class="headFontSize" id="userIdLabel" for="userId">User ID:</label>
+            <label class="headFontSize" id="passwordLabel" for="passwordLabel">Password:</label>
+            <br>
+            <input type="text" class="textBoxCircular" id="userId" name="userId" placeholder="Email or username" required>
+            <!-- Check password for userId -->
+            <input type="password" class="textBoxCircular" id="userPassword" name="userPassword" placeholder="Password" required>
+            <button type="submit" class="button" id="logIn" name="fname">Log In</button>
+        </form>
+        <a id="signUpLink" href="../signUp.html">Create account.</a>
+    </div>
+</header>
+
+    <div class="pic_slider">
+        <img id="slider" src="https://lh3.googleusercontent.com/_mothnvw-dZRi7sVFutIHxLIJkC_o-4-6rznkoobfVN1-yGng4SVXkNOhj7VpCHS22NxtKqMnnzx1JYx1f5ahww0GFzxNNzpRlosW4NoLKpY4hDWT560g8XgtknhKuDFpxTZaukEPw=w2400"/>
+        <button onclick="prev()"> Prev </button>
+        <button onclick="next()"> Next </button>
+    </div>
+
+<div id="description-container">
+    <ul class="flex-container">
+        <div class="row">
+            <li class="flex-item">
+                <div class="description-header">
+                    <h2>About</h2>
+                </div>
+                <div class="description-text">
+                    <p>Rate people and leave comments about them. Get points and rank up. Meet with people that have the same interest. Phasellus id risus maximus, pretium nisi at, sodales nisi. Quisque nec dictum nunc. In semper rutrum quam, in fringilla leo lacinia vitae. Vivamus sit amet enim porttitor nisl scelerisque aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et ultrices eros. Curabitur nec erat congue, euismod ex et, finibus enim. Nulla dictum nunc vel orci accumsan, sed dignissim urna dignissim.</p>
+                    <img class="icon" src="img/maleavatar.png">
+                </div>
+            </li>
+            <li class="flex-item">
+                <div class="description-header">
+                    <h2>Features</h2>
+                </div>
+                <div class="description-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et ultrices eros. Curabitur nec erat congue, euismod ex et, finibus enim. Nulla dictum nunc vel orci accumsan, sed dignissim urna dignissim. Phasellus id risus maximus, pretium nisi at, sodales nisi. Quisque nec dictum nunc. In semper rutrum quam, in fringilla leo lacinia vitae. Vivamus sit amet enim porttitor nisl scelerisque aliquet. In vel fermentum elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mi leo, elementum ac luctus id, tempor eget mauris. Nam lectus magna, porttitor eu placerat vitae, luctus ut enim.</p>
+                    <img class="icon" src="img/chartgear.png">
+                </div>
+            </li>
+        </div>
+        <div class="row">
+            <li class="flex-item">
+                <div class="description-header">
+                    <h2>Description #3</h2>
+                </div>
+                <div class="description-text">
+                    <p>This is Rebecca. You can rate her and comment on her profile. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et ultrices eros. Curabitur nec erat congue, euismod ex et, finibus enim. Nulla dictum nunc vel orci accumsan, sed dignissim urna dignissim. </p>
+                    <img class="icon" src="img/femaleavatar.png">
+                </div>
+            </li>
+            <li class="flex-item">
+                <div class="description-header">
+                    <h2>Description #4</h2>
+                </div>
+                <div class="description-text">
+                    <p>Hi, John Wick again. You can rate him and comment on his profile. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et ultrices eros. Curabitur nec erat congue, euismod ex et, finibus enim. Nulla dictum nunc vel orci accumsan, sed dignissim urna dignissim. </p>
+                    <img class="icon" src="img/johnwickicon.jpg">
+                </div>
+            </li>
+        </div>
+    </ul>
+</div>
+
+<footer>
+    <div id=business-info">
+        <ul id="business-info-items">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Meet the team</a></li>
+            <li><a href="../updates.html">Updates</a></li>
+        </ul>
+    </div>
+</footer>
+
+</div>
+</body>
+
+</html>
