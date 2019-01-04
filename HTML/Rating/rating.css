@@ -34,9 +34,13 @@ body{
 .header {
     background-color:#0099cc;
     color: blue;
-    padding: 75px;
-
     box-shadow: 0 50px 50px rgba(0,0,0,0.42), 0 220px 217px rgba(0,0,0,0.44);
+    z-index: -1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 300px;
+    width: 100%;
 }
 
 .menu li:hover {
@@ -51,10 +55,15 @@ body{
     font-size: 14px;
     box-shadow: 0 50px 50px rgba(0,0,0,0.42), 0 220px 217px rgba(0,0,0,0.44);
     position: relative;
-    padding-bottom: 500px;
     border: solid;
+    width: 100px;
+    height: 400px;
+    margin: 20px 0px 20px 30px;
 }
 
+#main_container{
+    padding: 0px 75px 0px;
+}
 
 #profile{
     background: #0099cc;
@@ -63,56 +72,40 @@ body{
     font-size: 14px;
     box-shadow: 0 50px 50px rgba(0,0,0,.10), 0 50px 50px rgba(0,0,0,0.50);
     width:400px;
-    height:400px;
+    height:600px;
     border:solid;
     padding-bottom: 10px;
+    margin-top: 80px;
+    margin-left: 30px;
 }
 .ulbio{
     margin-right:5px;
     margin-left:-100px;
 
 }
-
-
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
+#wall{
+    margin-left: 475px;
+    margin-top: 300px;
+    width: 1000px;
+    position: absolute;
 }
-
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
+.post_options{
+    border: solid;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
 }
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+#post{
+    border: solid;
+    border-color: gray;
+    display: block;
+    height:200px;
+    margin: 30px 30px 30px;
 }
-
-#myChart{
-    transform: scale(1, 1);
-}
-
-#average{
+#feed{
+    border: solid;
+    border-color: black;
+    display: block;
+    margin: 30px 30px 30px;
+    height: 200px;
 }
