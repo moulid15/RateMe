@@ -2,11 +2,6 @@
     margin: 0px;
 }
 
-.loginPage-container{
-    background-color: #fa6a00;
-
-}
-
 /* Header CSS */
 header{
     margin-left: 8%;
@@ -59,11 +54,8 @@ header{
 }
 
 .button{
-    background-color: rgb(138, 69, 0);
-    box-shadow: 1.5px 2px;
-    border: 0.5px solid navajowhite;
-    border-radius: 5px;
-    color: black;
+    background-color: black;
+    color: white;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -78,7 +70,7 @@ a{
 }
 
 a:hover{
-    color: white;
+    color: blue;
 }
 
 #skyBlueLine{
@@ -86,25 +78,20 @@ a:hover{
 }
 
 /*Slider Image CSS*/
-hr {
-    display:block;
-    background-color: rgb(200, 49, 0);
-    width: 80%;
-    margin: auto;
+#slider{
+    height: 700px;
+    width: 100%;
 }
 
 .slide-container{
+    margin-top: 20px;
     width: 800px;
     height: 600px;
-    margin-left: auto;
-    margin-right: auto;
     overflow: hidden;
     text-align: center;
 }
 
 .image-container{
-    width: 3200px;
-    height: 600px;
     position: relative;
     transition: left 2s;
     -webkit-transition: left 2s;
@@ -130,7 +117,6 @@ hr {
     border-radius: 5px;
     background-color: white;
     border: solid black;
-
 }
 
 #slider-image-1:target ~ .image-container{
@@ -149,9 +135,8 @@ hr {
     left: -2400px;
 }
 
-h3{
-    background-color: black;
-}
+
+/*Jaime Section */
 
 /*Description Section CSS*/
 #description-container{

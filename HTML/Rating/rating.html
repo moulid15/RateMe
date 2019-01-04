@@ -26,7 +26,7 @@
     </div>
 
     <div id="average"></div>
-    <canvas id="myChart" width="400" height="400"></canvas>
+    <canvas id="myChart"></canvas>
 
     <div class='pic'> picture</div>
     <div class="bio">
@@ -62,9 +62,9 @@
         data: {
             datasets: [{
                 data: [map1['str1'], map1['str2'], map1['str3'], map1['str4'], map1['str5']],
-                backgroundColor: ["#0074D9", "#FF4136", "#2ECC40", "#FF851B", "#7FDBFF"]
+                backgroundColor: ["#0074D9", "#FF4136", "#2ECC40", "#FF851B", "#7FDBFF"],
             }],
-            labels: ['1 Star','2 Stars','3 Star','4 Star','5 Star']
+            labels: ['1 Star','2 Stars','3 Star','4 Star','5 Star'],
         },
         options: {
             responsive: true,

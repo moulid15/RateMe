@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Log In</title>
-    <link rel="stylesheet" type="text/css" href="../CSS/logInPage.css">
+    <link rel="stylesheet" type="text/css" href="logInPage.css">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Poppins|Seaweed+Script" rel="stylesheet">
+    <script type="text/javascript" src="loginPage.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
 </head>
 
 <body>
 <div class="loginPage-container">
+
 <header id="header">
     <div id="logo-container">
-        <h1 id="logo-placeholder">RateMe!  <i class="fas fa-angle-double-up"> </i >  <i class="fas fa-angle-double-up"> </i > <i class="fas fa-angle-double-up"> </i >    </h1>
+        <h1 id="logo-placeholder">RateMe!</h1>
     </div>
 
     <div class="userInfo">
-        <form action="success.html">
+        <form action="../success.html">
             <!-- Javascript to check if text === email or username -->
             <label class="headFontSize" id="userIdLabel" for="userId">User ID:</label>
             <label class="headFontSize" id="passwordLabel" for="passwordLabel">Password:</label>
@@ -27,50 +28,17 @@
             <input type="password" class="textBoxCircular" id="userPassword" name="userPassword" placeholder="Password" required>
             <button type="submit" class="button" id="logIn" name="fname">Log In</button>
         </form>
-        <a id="signUpLink" href="signUp.html">Create account.</a>
+        <a id="signUpLink" href="../signUp.html">Create account.</a>
     </div>
 </header>
-<div id="skyBlueLine">
-    <hr>
-</div>
-    <br/>
-    <br/>
-    <h9 style="color: #fa6a00;">Potato!</h9>
-    <br/>
-<h3>
-    <br/>
-</h3>
-<h2>
 
-    <div class = "slide-container">
-        <span id="slider-image-1"></span>
-        <span id="slider-image-2"></span>
-        <span id="slider-image-3"></span>
-        <span id="slider-image-4"></span>
-
-        <div class = "image-container">
-            <img src = "img/1.jpg" width= "800" height= "600" class = "slider-image">
-            <img src = "img/2.jpg" width= "800" height= "600" class = "slider-image">
-            <img src = "img/3.png" width= "800" height= "600" class = "slider-image">
-            <img src = "img/4.jpg" width= "800" height= "600" class = "slider-image">
-
-        </div>
-        <div class = "button-container">
-            <a href="#slider-image-1" class="slider-button"></a>
-            <a href="#slider-image-2" class="slider-button"></a>
-            <a href="#slider-image-3" class="slider-button"></a>
-            <a href="#slider-image-4" class="slider-button"></a>
-
-        </div>
-
+    <div class="pic_slider">
+        <img id="slider" src="https://lh3.googleusercontent.com/_mothnvw-dZRi7sVFutIHxLIJkC_o-4-6rznkoobfVN1-yGng4SVXkNOhj7VpCHS22NxtKqMnnzx1JYx1f5ahww0GFzxNNzpRlosW4NoLKpY4hDWT560g8XgtknhKuDFpxTZaukEPw=w2400"/>
+        <button onclick="prev()"> Prev </button>
+        <button onclick="next()"> Next </button>
     </div>
-</h2>
-<h3>
-    <br/>
-</h3>
-</div>
 
-<br/>
+<!-- Jaime Part -->
 <div id="description-container">
 
     <div id="description-header">
@@ -90,12 +58,12 @@
             <li><a href="#">About</a></li>
             <li><a href="#">Mission</a></li>
             <li><a href="#">Meet the team</a></li>
-            <li><a href="updates.html">Updates</a></li>
+            <li><a href="../updates.html">Updates</a></li>
         </ul>
     </div>
 </footer>
 
-
+</div>
 </body>
 
 </html>

@@ -34,12 +34,6 @@
     color:rgb(37, 83, 163);
 }
 
-#myChart{
-
-    transform: scale(0.5, 0.5);
-}
-
-
 body{
     background: linear-gradient(to right, lightseagreen, blue);;
 }
