@@ -1,17 +1,5 @@
-I wanna be the very best
-Like no one ever was
-To catch them is my real test
-To train them is my cause
-
-I will travel across the land
-Searching far and wide
-Teach Pokemon to understand
-The power that's inside
-
-Pokemon! Gotta catch 'em
-I know it's my destiny
-Pokemon! Oh, you're my best friend
-In a world we must defend
+Create a web application that allows people to rate each other. Future Rating System:
+you can create communities and join them. Indorder to Join you most have the same rating or close to.
 
 
-
+IOS Development + Android Development coming in the future.

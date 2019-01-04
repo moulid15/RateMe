@@ -17,24 +17,26 @@
 </div>
 
 <div class="col-3 col-s-12">
-    <div class="rating">
-        <span><input type="radio" name="rating" id="str5" value="5" onClick="addFive()"><label for="str5"></label></span>
-        <span><input type="radio" name="rating" id="str4" value="4" onClick="addFour()"><label for="str4"></label></span>
-        <span><input type="radio" name="rating" id="str3" value="3" onClick="addThree()"><label for="str3"></label></span>
-        <span><input type="radio" name="rating" id="str2" value="2" onClick="addTwo()"><label for="str2"></label></span>
-        <span><input type="radio" name="rating" id="str1" value="1" onClick="addOne()"><label for="str1"></label></span>
+    <div id="profile">
+        <div class="chart-container" style="position: relative; height:350px; width:350px;display:inline-block">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div id="rating_container">
+            <div id="average">Average : N/A</div>
+            <div class="rating">
+                <span><input type="radio" name="rating" id="str5" value="5" onClick="addFive()"><label for="str5"></label></span>
+                <span><input type="radio" name="rating" id="str4" value="4" onClick="addFour()"><label for="str4"></label></span>
+                <span><input type="radio" name="rating" id="str3" value="3" onClick="addThree()"><label for="str3"></label></span>
+                <span><input type="radio" name="rating" id="str2" value="2" onClick="addTwo()"><label for="str2"></label></span>
+                <span><input type="radio" name="rating" id="str1" value="1" onClick="addOne()"><label for="str1"></label></span>
+            </div>
+        </div>
     </div>
-
-    <div id="average"></div>
-    <canvas id="myChart"></canvas>
-
-    <div class='pic'> picture</div>
     <div class="bio">
-        <ul class=ulbio>
-            <li class="_1zw6 _md0 _5h-n _5vb9">stuff</li>
-        </ul>
+            <ul class=ulbio>
+                <li class="_1zw6 _md0 _5h-n _5vb9">stuff</li>
+            </ul>
     </div>
-</div>
 </div>
 
 
@@ -62,17 +64,19 @@
         data: {
             datasets: [{
                 data: [map1['str1'], map1['str2'], map1['str3'], map1['str4'], map1['str5']],
-                backgroundColor: ["#0074D9", "#FF4136", "#2ECC40", "#FF851B", "#7FDBFF"],
+                backgroundColor: ["#0074D9", "#FF4136", "#2ECC40", "#FF851B", "#7FDBFF"]
             }],
-            labels: ['1 Star','2 Stars','3 Star','4 Star','5 Star'],
+            labels: ['1 Star','2 Stars','3 Star','4 Star','5 Star']
         },
         options: {
             responsive: true,
             title:{
                 display: true,
                 text: "Color test"
-            }
+            },
+            cutoutPercentage:70,
         }
+
     });
 </script>
 
