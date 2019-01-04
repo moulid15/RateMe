@@ -51,21 +51,21 @@ body{
     font-size: 14px;
     box-shadow: 0 50px 50px rgba(0,0,0,0.42), 0 220px 217px rgba(0,0,0,0.44);
     position: relative;
-    margin-top:100px;
     padding-bottom: 500px;
+    border: solid;
 }
 
 
 #profile{
     background: #0099cc;
-    padding: 75px;
     color: #ffffff;
     text-align: center;
     font-size: 14px;
     box-shadow: 0 50px 50px rgba(0,0,0,.10), 0 50px 50px rgba(0,0,0,0.50);
-    width:200px;
-    height:200px;
+    width:400px;
+    height:400px;
     border:solid;
+    padding-bottom: 10px;
 }
 .ulbio{
     margin-right:5px;
@@ -110,6 +110,9 @@ body{
     .col-12 {width: 100%;}
 }
 
-#rating_container{
-    text-align: center;
+#myChart{
+    transform: scale(1, 1);
+}
+
+#average{
 }
