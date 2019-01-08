@@ -53,7 +53,7 @@ header{
     margin-left: 38.5%;
 }
 
-.button{
+#logIn{
     background-color: black;
     color: white;
     text-align: center;
@@ -62,6 +62,7 @@ header{
     font-size: 0.9vw;
     margin: 4px 2px;
     cursor: pointer;
+    border: none;
 }
 
 a{
@@ -73,67 +74,49 @@ a:hover{
     color: blue;
 }
 
-#skyBlueLine{
-    margin-top: 0.5%;
-}
-
-/*Slider Image CSS s*/
+/*Slider Image CSS */
 #slider{
-    height: 700px;
+    margin-top: 0.5%;
+    height: 625px;
     width: 100%;
 }
 
-.slide-container{
-    margin-top: 20px;
-    width: 800px;
-    height: 600px;
-    overflow: hidden;
-    text-align: center;
+.arrow-size{
+    font-size: 3em;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255,255,255,0);
+    top: 55%;
 }
 
-.image-container{
-    position: relative;
-    transition: left 2s;
-    -webkit-transition: left 2s;
-    -moz-transition: left 2s;
-    -o-transition: left 2s;
-}
-
-.slider-image{
-    float: left;
-    margin: 0px;
-    padding: 0px;
-}
-
-.button-container{
-    top: -5%;
-    position: relative;
-}
-
-.slider-button{
-    display: inline-block;
-    height: 10px;
-    width: 10px;
+#arrow-left{
+    border: none;
+    position: absolute;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    cursor: pointer;
     border-radius: 5px;
-    background-color: white;
-    border: solid black;
 }
 
-#slider-image-1:target ~ .image-container{
-    left: 0px;
+#arrow-right{
+    border: none;
+    position: absolute;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-#slider-image-2:target ~ .image-container{
-    left: -800px;
+#arrow-right:focus, arrow-right:active{
+    outline: none;
 }
 
-#slider-image-3:target ~ .image-container{
-    left: -1600px;
+#arrow-left:focus, arrow-left:active{
+    outline: none;
 }
 
-#slider-image-4:target ~ .image-container{
-    left: -2400px;
-}
+/*Jamie Section */
 
 /* Description Container CSS */
 
