@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="logInPage.css">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Poppins|Seaweed+Script" rel="stylesheet">
     <script type="text/javascript" src="loginPage.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 
 <body>
@@ -26,16 +26,16 @@
             <input type="text" class="textBoxCircular" id="userId" name="userId" placeholder="Email or username" required>
             <!-- Check password for userId -->
             <input type="password" class="textBoxCircular" id="userPassword" name="userPassword" placeholder="Password" required>
-            <button type="submit" class="button" id="logIn" name="fname">Log In</button>
+            <button type="submit" id="logIn" name="fname">Log In</button>
         </form>
         <a id="signUpLink" href="../signUp.html">Create account.</a>
     </div>
 </header>
 
-    <div class="pic_slider">
+    <div class="pic-slider">
         <img id="slider" src="https://lh3.googleusercontent.com/_mothnvw-dZRi7sVFutIHxLIJkC_o-4-6rznkoobfVN1-yGng4SVXkNOhj7VpCHS22NxtKqMnnzx1JYx1f5ahww0GFzxNNzpRlosW4NoLKpY4hDWT560g8XgtknhKuDFpxTZaukEPw=w2400"/>
-        <button onclick="prev()"> Prev </button>
-        <button onclick="next()"> Next </button>
+        <button id="arrow-left" class="fas fa-chevron-left arrow-size" onclick="prev()"></button>
+        <button id="arrow-right" class="fas fa-chevron-right arrow-size" onclick="next()"></button>
     </div>
 
 <div id="description-container">
