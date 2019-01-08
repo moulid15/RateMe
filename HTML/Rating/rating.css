@@ -101,6 +101,8 @@ body{
     display: block;
     height:200px;
     margin: 30px 30px 30px;
+    position: relative;
+    padding : 0 10px 0;
 }
 #feed{
     border: solid;
@@ -108,4 +110,41 @@ body{
     display: block;
     margin: 30px 30px 30px;
     height: 200px;
+}
+
+.post_options{
+    cursor: pointer;
+}
+
+.options ul{
+    padding: 0;
+    list-style-type: none;
+}
+.options ul li{
+    display:inline-block;
+}
+li a{
+    text-decoration: none;
+    color:black;
+}
+li a:visited{
+    text-decoration: none;
+}
+
+.after_first_option:before{
+    content : "|";
+}
+
+.right_text{
+    text-align: right;
+}
+
+#submission{
+    padding: 5px 30px 5px;
+}
+
+#submission input{
+    resize: none;
+    width : 400px;
+    height : 60px;
 }
