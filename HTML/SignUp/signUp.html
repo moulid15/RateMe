@@ -5,112 +5,70 @@
     <title>Sign Up</title>
     <link rel="stylesheet" type="text/css" href="signUpPage.css">
     <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Poppins|Seaweed+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
 </head>
 
 <body>
-<header>
-
-    <div class="signUpContainer">
-        <img id="signUpImg" src="https://lh3.googleusercontent.com/lN3x0kp3XgzlpxIWlntrRt4JLh9FW30Y73VIVHiHB4K_cWet34BEcGgBPb2tkRWTZAP98XgWCcis2SDRVxz2y0kqh_6gkpCFhxrnchQRsKXKykRsOnegpA7lfdIANB8h-5hwmFJ81Q=w2400">
-
-        <div class="loginPage-container">
-            <div id="logo-container">
-                <h1 id="logo-placeholder"><a href="../loginPage/logIn.html">RateMe! <i class="fas fa-angle-double-up"> </i >  <i class="fas fa-angle-double-up"> </i > <i class="fas fa-angle-double-up"> </i > </a></h1>
-            </div>
-            <div class="userInfo">
-                <form action="../success.html">
-                    <!-- Javascript to check if text === email or username -->
-                    <div class="userLabelContainer">
-                        <label class="headFontSize" id="userIdLabel" for="userId">User ID:</label>
-                        <label class="headFontSize" id="passwordLabel" for="passwordLabel">Password:</label>
-                    </div>
-                    <input type="text" class="textBoxCircular" id="userId" name="userId" placeholder="Email or username" required>
-                    <!-- Check password for userId  -->
-                    <input type="password" class="textBoxCircular" id="userPassword" name="userPassword" placeholder="Password" required>
-                    <button type="submit" class="button" id="logIn" name="fname">Log In</button>
-                </form>
+    <header>
+        <div class="signUpContainer">
+            <div class="loginPage-container">
+                <div id="logo-container">
+                    <h1 id="logo-placeholder"><a href="../loginPage/logIn.html">RateMe! <i class="fas fa-angle-double-up"></i>  <i class="fas fa-angle-double-up"> </i> <i class="fas fa-angle-double-up"> </i></a></h1>
+                </div>
             </div>
         </div>
+    </header>
 
-        <h1 id="signUpText">Sign Up</h1>
-        <h1 id="signUpPersuasion">Join Something Great</h1>
-        <hr id="headerUnderLine">
-        <div class="userInfoContainer mc">
-            <!-- Sign Up Part -->
-            <!-- new UserId need to be added -->
-            <input type="text" id="newUserId" class="textBoxCircular" name="newUserId"  placeholder="Email or username" required>
-            <!-- Password store -->
-            <input type="password" id="newUserPassword" class="textBoxCircular" name="newUserPassword" placeholder="Password" required>
-            <!-- check if it matches the password user typed -->
-            <input type="password" id="confirmUserPassword" class="textBoxCircular" name="confirmUserPassword" placeholder="Re-enter password" required>
-            <!-- Submit information -->
-            <button type="submit" name="createAcc" id="createAcc">Create Account</button>
+    <div class="flex-container">
+        <div class="flex-item" id="imgContainer">
+            <img id="signUpImg" src="https://images.pexels.com/photos/1471752/pexels-photo-1471752.jpeg?cs=srgb&dl=casual-cellphone-contemporary-1471752.jpg&fm=jpg">
+        </div>
+        <div class="flex-item">
+            <h1 id="signUpText">Sign Up</h1>
+            <form class="registrationInfo">
+                <div>
+                    <input type="text" name="newUserFullName"  placeholder="Full Name" required>
+                </div>
+                <div>
+                    <input type="text" name="newUserId"  placeholder="Username" required>
+                </div>
+                <div>
+                    <input type="email" name="newUserEmail"  placeholder="Email Address" required>
+                </div>
+                <div>
+                    <input id="pass1" type="password" name="newUserPassword" placeholder="Password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                </div>
+                <div>
+                    <input type="password" name="confirmUserPassword" placeholder="Re-enter password" onchange="check(this)" required>
+                </div>
+                <!--div id="checkboxwrapper"><input type="checkbox" required>I agree to the Terms of Use.</div>
+                <div>
+                    <input id="dob" type="date" name="bday" required>
+                </div>
+                <div>
+                    Gender: 
+                    <input type="radio" name="gender" value="male" checked> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other"> Other
+                </div-->
+                <button type="submit" name="createAcc" id="createAcc">Create Account</button>
+            </form>
+            <div id="signInContainer">Already have an account? <a href="../loginPage/logIn.html">Sign In <i class="fas fa-arrow-right"></i></a></div>
         </div>
     </div>
-
-</header>
-
-<main>
-    <h1 id="whyHeader">Why?</h1>
-    <p id="whyDescription">Let me tell you why this is a cool. What is love?
-        Baby don't hurt me
-        Don't hurt me
-        No more
-        Baby don't hurt me, don't hurt me
-        No more
-        What is love?
-        Yeah
-        I don't know why you're not fair
-        I give you my love, but you don't care
-        So what is right and what is wrong?
-        Gimme a sign
-        What is love?
-        Baby don't hurt me
-        Don't hurt me
-        No more
-        What is love?
-        Baby don't hurt me
-        Don't hurt me
-        No more
-        Oh, I don't know, what can I do?
-        What else can I say, it's up to you
-        I know we're one, just me and you
-        I can't go on
-        What is love?
-        Baby don't hurt me
-        Don't hurt me
-        No more
-        What is love?
-        Baby don't hurt me
-        Don't hurt me
-        No more
-        What is love?
-        What is love?
-        What is love?
-        Baby don't hurt me
-        Don't hurt me
-        No more
-        Don't hurt me
-        Don't hurt me
-        I want no other, no other lover
-        This is our life, our time
-        We are together I need you forever
-        Is it…</p>
-</main>
-
-<hr id="businessOverline"
-<footer>
-    <div id=business-info">
-        <ul id="business-info-items">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Mission</a></li>
-            <li><a href="#">Meet the team</a></li>
-            <li><a href="../updates.html">Updates</a></li>
-        </ul>
-    </div>
-</footer>
-
 </body>
+
+<script type="text/javascript">
+    //document.getElementById('dob').valueAsDate = new Date();
+
+    function check(input) {
+        if (input.value != document.getElementById('pass1').value) {
+            input.setCustomValidity('Passwords must match');
+        } else {
+            // input is valid -- reset the error message
+            input.setCustomValidity('');
+        }
+    }
+</script>
 </html>
