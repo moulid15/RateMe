@@ -47,7 +47,7 @@ body{
     background-color: #0099cc;
 }
 
-.bio {
+#bio {
     background: #0099cc;
     padding: 150px;
     color: #ffffff;
@@ -62,7 +62,7 @@ body{
 }
 
 #main_container{
-    padding: 0px 75px 0px;
+    padding: 0px 100px 0px;
 }
 
 #profile{
@@ -84,9 +84,9 @@ body{
 
 }
 #wall{
-    margin-left: 475px;
+    margin-left: 600px;
     margin-top: 300px;
-    width: 1000px;
+    width: 625px;
     position: absolute;
 }
 .post_options{
@@ -99,7 +99,7 @@ body{
     border: solid;
     border-color: gray;
     display: block;
-    height:200px;
+    height:auto;
     margin: 30px 30px 30px;
     position: relative;
     padding : 0 10px 0;
@@ -140,11 +140,12 @@ li a:visited{
 }
 
 #submission{
+    text-align: center;
     padding: 5px 30px 5px;
 }
 
-#submission input{
+#submission textarea{
     resize: none;
-    width : 400px;
-    height : 60px;
+    width : 450px;
+    font-size: 20px;
 }
