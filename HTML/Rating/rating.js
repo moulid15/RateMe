@@ -59,3 +59,17 @@ function average() {
     return average.toFixed(2);
 }
 
+function autosizeTextArea(){
+    let tx = document.getElementsByTagName('textarea');
+    for (let i = 0; i < tx.length; i++) {
+        tx[i].setAttribute('style', 'height:' + (tx[i].scrollHeight) + 'px;overflow-y:hidden;text-overflow: ellipsis');
+        tx[i].addEventListener("input", OnInput, false);
+    }
+
+    function OnInput() {
+        this.style.height = 'auto';
+        let max_height = Number(this.style.maxHeight.substring(0,this.style.maxHeight.length-2));
+        this.style.height = (this.scrollHeight > max_height) ? this.style.maxHeight : this.scrollHeight + 'px';
+//        this.style.height = (this.scrollHeight) + 'px';
+    }
+}

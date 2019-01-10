@@ -11,93 +11,81 @@
 <body>
 <header>
 
-<div class="header">
-    <a>
-        <img src="">
-    </a>
-</div>
+    <div class="header">
+        <a>
+            <img src="">
+        </a>
+    </div>
 
-<div id="main_container">
-    <div id="wall">
-        <div id="post">
-            <div class="options">
-                <ul>
-                    <li>
-                        <a href="#">Create Post</a>
-                    </li>
-                    <li class="after_first_option">
-                        <a href="#">Add Photo/Video</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <hr />
-            </div>
-            <div id="submission">
-            </div>
-            <div class="options">
+    <div id="main_container">
+        <div id="wall">
+            <div id="post">
+                <div class="options">
+                    <ul>
+                        <li>
+                            <a href="#">Create Post</a>
+                        </li>
+                        <li class="after_first_option">
+                            <a href="#">Add Photo/Video</a>
+                        </li>
+                    </ul>
+                </div>
                 <div>
                     <hr />
                 </div>
-                <div class="right_text">
-                    <ul>
-                        <li>
-                            <a href="#">Tag a Friend</a>
-                        </li>
-                        <li class="after_first_option">
-                            <a href="#">Post</a>
-                        </li>
-                    </ul>
-<!--                    <div class="post_options">Photo/Video</div>
-                    <div class="post_options after_first">Tag a friend</div>
-                    <div class="post_options after_first">Post</div>
--->
+                <div id="submission">
+                    <textarea id="profile_post"></textarea>
+                </div>
+                <div class="options">
+                    <div>
+                        <hr />
+                    </div>
+                    <div class="right_text">
+                        <ul>
+                            <li>
+                                <a href="#">Tag a Friend</a>
+                            </li>
+                            <li class="after_first_option">
+                                <a href="#">Post</a>
+                            </li>
+                        </ul>
+                        <!--                    <div class="post_options">Photo/Video</div>
+                                            <div class="post_options after_first">Tag a friend</div>
+                                            <div class="post_options after_first">Post</div>
+                        -->
+                    </div>
+                </div>
+            </div>
+            <div id="feed">
+                asdfasdfasf
+            </div>
+        </div>
+        <div id="profile">
+            <div class="chart-container" style="position: relative; height:350px; width:350px;display:inline-block">
+                <canvas id="myChart"></canvas>
+            </div>
+            <div id="rating_container">
+                <div id="average">Average : N/A</div>
+                <div class="rating">
+                    <span><input type="radio" name="rating" id="str5" value="5" onClick="addFive()"><label for="str5"></label></span>
+                    <span><input type="radio" name="rating" id="str4" value="4" onClick="addFour()"><label for="str4"></label></span>
+                    <span><input type="radio" name="rating" id="str3" value="3" onClick="addThree()"><label for="str3"></label></span>
+                    <span><input type="radio" name="rating" id="str2" value="2" onClick="addTwo()"><label for="str2"></label></span>
+                    <span><input type="radio" name="rating" id="str1" value="1" onClick="addOne()"><label for="str1"></label></span>
                 </div>
             </div>
         </div>
-        <div id="feed">
-            asdfasdfasf
-        </div>
-    </div>
-    <div id="profile">
-        <div class="chart-container" style="position: relative; height:350px; width:350px;display:inline-block">
-            <canvas id="myChart"></canvas>
-        </div>
-        <div id="rating_container">
-            <div id="average">Average : N/A</div>
-            <div class="rating">
-                <span><input type="radio" name="rating" id="str5" value="5" onClick="addFive()"><label for="str5"></label></span>
-                <span><input type="radio" name="rating" id="str4" value="4" onClick="addFour()"><label for="str4"></label></span>
-                <span><input type="radio" name="rating" id="str3" value="3" onClick="addThree()"><label for="str3"></label></span>
-                <span><input type="radio" name="rating" id="str2" value="2" onClick="addTwo()"><label for="str2"></label></span>
-                <span><input type="radio" name="rating" id="str1" value="1" onClick="addOne()"><label for="str1"></label></span>
-            </div>
-        </div>
-    </div>
-    <div class="bio">
+        <div id="bio">
             <ul class=ulbio>
                 <li class="_1zw6 _md0 _5h-n _5vb9">stuff</li>
             </ul>
+        </div>
     </div>
-</div>
-
-
-
-<div class="row">
-
-
-    <div class="footer">
-
-
-
+    <div class="row">
+        <div class="footer">
+        </div>
     </div>
-</div>
 </header>
-
-
-
-
-
 <script>
     ctx = document.getElementById('myChart').getContext('2d');
 
@@ -120,6 +108,11 @@
         }
 
     });
+    autosizeTextArea();
+    let profile_post_ele = document.getElementById('profile_post');
+    let bio_ele = document.getElementById('bio');
+    let feed_ele = document.getElementById('feed');
+    profile_post_ele.style.maxHeight = bio_ele.offsetTop + feed_ele.offsetTop + 'px';
 </script>
 
 </body>
