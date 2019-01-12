@@ -236,3 +236,8 @@ h3{
 p{
     font-family: 'Catamaran', sans-serif;
 }
+
+/* Member's paragraph */
+.about-person{
+    padding-top: 2.5vh;
+}

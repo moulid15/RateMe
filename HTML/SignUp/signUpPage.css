@@ -39,7 +39,7 @@ a{
 }
 
 a:hover{
-    color: gray;
+    opacity: 0.5;
 }
 
 #skyBlueLine{
