@@ -61,7 +61,7 @@ body{
     margin: 20px 0px 20px 30px;
 }
 
-#main_container{
+.body_container{
     padding: 0px 100px 0px;
 }
 
@@ -148,4 +148,92 @@ li a:visited{
     resize: none;
     width : 450px;
     font-size: 20px;
+}
+
+.image_container{
+    position : relative;
+    width:180px;
+    height: 180px;
+    left: 110px;
+    bottom: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.select_profile{
+    position :relative;
+    height: 42px;
+    top:110px;
+    padding-top: 13px;
+    display: none;
+}
+
+.select_profile:hover{
+    cursor: pointer;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal_header{
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal_container{
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    top: 15%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.modal_body{
+    padding: 2px 16px;
+    height: 600px;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal_footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.slide{
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+.pic_container{
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
