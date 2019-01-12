@@ -23,8 +23,14 @@ a:visited{
     width: 100%;
     background-color: black;
     color: white;
+    width: 180vh;
+    height: 50px;
+    left:15vh;
+    right:15vh;
     text-align: center;
     padding:10px;
+    opacity: .5;
+    filter: alpha(opacity=100);
 }
 i{
     color:white;
@@ -48,19 +54,23 @@ nav#sidebar {
     background:black;
     color:white;
     padding: 50px 0px 100%;
-
+    opacity: 0.5;
+    filter: alpha(opacity=50);
 }
 ul.dots * {
     /* disable border-box from bootstrap */
     box-sizing: content-box;
     list-style-type: none;
 
-
+    opacity: 1.0;
+    filter: alpha(opacity=100);
 }
 ul.dots a {
     text-decoration: none;
     font-size: 20px;
     color: black;
+    opacity: 1.0;
+    filter: alpha(opacity=100);
 }
 ul.dots a:hover {
     text-decoration: none;
