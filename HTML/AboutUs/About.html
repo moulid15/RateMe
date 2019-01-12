@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <title>About Us | RateMe</title>
     <link rel="stylesheet" type="text/css" href="About.css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|Quicksand|Raleway" rel="stylesheet">
+
 </head>
 <body>
-
+<!-- Navigation Area -->
 <header id="header">
     <div id="logo-container">
-        <ul id="ul-NavBar">
-            <li class="navBar" id="logo-placeholder">RateMe!</li>
+        <ul class="ul-NavBar">
+            <li class="navBar" id="logo-placeholder" style="font-family: 'Catamaran', sans-serif;">RateMe!</li>
             <li class="navBar" id="login"><button id="login-button" onClick="document.getElementById('login-modal').style.display='block'">Log In</button></li>
         </ul>
     </div>
@@ -42,6 +44,59 @@
         </form>
     </div>
 </header>
+
+<hr>
+
+<!-- The meat side bar and main article -->
+<main>
+    <!-- Side Bar for the company information -->
+    <div class="nav-container">
+        <div class="sidebar">
+            <div class="wrapper">
+                <nav class="sidebar-nav">
+                    <div class="sidebar-content">
+                        <h2 class="about-header">About</h2>
+                        <ul class="ul-NavBar sidebar-ul" style="display:block;">
+                            <li><a href="#about-us">About Us</a></li>
+                            <li><a href="#goal">Goal</a></li>
+                            <li><a href="#members">Members</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- The main content -->
+        <div class="wrapper">
+            <section class="nav-content">
+                <h2 id="about-us">About Us</h2>
+                <p>This social media platform started out as a Hackathon project created by a group of college students. </p>
+
+                <h2 id="goal">Goal</h2>
+                <p>The goal of this project is to create a social media platform that allows people to rate each other. The
+                    challenges we face during this project helped us work as a team to problem solve and it helped us learn
+                    new tools to build our project. We hope to create something enjoyable for the users and for us.</p>
+
+                <h2 id="members">Members</h2>
+                <h3>Ralph Huang</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et ultrices eros. Curabitur nec erat
+                    congue, euismod ex et, finibus enim. Nulla dictum nunc vel orci accumsan, sed dignissim urna dignissim.
+                    Phasellus id risus maximus, pretium nisi at, sodales nisi. Quisque nec dictum nunc. In semper rutrum quam,
+                    in fringilla leo lacinia vitae. Vivamus sit amet enim porttitor nisl scelerisque aliquet. In vel fermentum
+                    elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mi leo, elementum ac luctus id,
+                    tempor eget mauris. Nam lectus magna, porttitor eu placerat vitae, luctus ut enim.</p>
+            </section>
+        </div>
+    </div>
+</main>
+
+<!-- Other stuff we put later -->
+<footer>
+    <ul>
+        <li>Footer Stuff</li>
+    </ul>
+</footer>
 
 <!-- Leave the Script here it has to wait for the modal to load before you can click out of it -->
 <script type="text/javascript" src="About.js"></script>

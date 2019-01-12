@@ -4,7 +4,7 @@
 
 /* Navs */
 
-#ul-NavBar{
+.ul-NavBar{
     list-style-type: none;
 }
 
@@ -13,10 +13,10 @@
 }
 
 #header{
-    padding: 3vh 20vw 10vh 15vw;
-    border: solid;
+    padding: 3vh 20vw 3vh 20vw;
 }
 
+/* Login Stuff */
 #login{
     float: right;
     margin-top: 1.7vh;
@@ -25,6 +25,11 @@
 #login-button{
     font-size: 1.1vw;
     border: none;
+    background-color: white;
+}
+
+#login-button:hover{
+    opacity: 0.5;
 }
 
 #login-button:focus {
@@ -151,4 +156,83 @@ span.userPSW {
     .cancel-btn {
         width: 100%;
     }
+}
+
+main{
+    border: thin solid rgba(0,0,0,0);
+    background-color: rgb(240, 240, 240);
+}
+
+/* Encompass sidebar and nav content */
+.nav-container{
+    margin: 5vh 20vw 0 22vw;
+    padding: 0 1vw 0 1vw;
+    border: thin solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+/* SideBar Navigation */
+.sidebar-nav{
+    padding-top: 5vh;
+    float:left;
+    height: 100%;
+    width: 256px;
+    padding-bottom: 50%;
+}
+
+/* Nav Content */
+.nav-content{
+    border: thin none rgba(0, 0, 0, 0.1);
+    border-left-style: solid;
+    margin-left: 256px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 10vh;
+}
+
+/* Target Nav Content's h2 */
+section h2{
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    font-family: 'Quicksand', sans-serif;
+}
+
+section hr{
+    margin-bottom: 1vh;
+}
+
+.sidebar-ul li{
+    padding-top: 2vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.sidebar-content{
+    padding-left: 3vw;
+}
+
+/* Links color */
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: 0.5;
+}
+
+/* Fonting */
+.about-header{
+    font-family: 'Raleway', sans-serif;
+    padding-left: 1.5vw;
+}
+
+/* Name of members */
+h3{
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 1vh;
+}
+
+/* Paragraph font */
+p{
+    font-family: 'Catamaran', sans-serif;
 }
