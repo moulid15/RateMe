@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us | RateMe</title>
+    <link rel="stylesheet" type="text/css" href="About.css">
+</head>
+<body>
+
+<header id="header">
+    <div id="logo-container">
+        <ul id="ul-NavBar">
+            <li class="navBar" id="logo-placeholder">RateMe!</li>
+            <li class="navBar" id="login"><button id="login-button" onClick="document.getElementById('login-modal').style.display='block'">Log In</button></li>
+        </ul>
+    </div>
+
+    <!--Login modal part -->
+    <div id="login-modal" class="modal">
+        <span onClick="document.getElementById('login-modal').style.display='none'" class="close">&times;</span>
+
+        <form class="modal-content modal-animate">
+            <div class="modal-container">
+                <label for="userId"><b>Username:</b></label>
+                <input type="text" placeholder="Username" name="userId" required />
+
+                <label for="userPSW"><b>Password:</b></label>
+                <input type="password" placeholder="Password" name="userPSW" required />
+
+                <!-- Rework this button to get information -->
+                <button class="modal-login-btn" type="submit">Login</button>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="modal-container">
+                <button type="button" onclick="document.getElementById('login-modal').style.display='none'" class="cancel-btn">Cancel</button>
+                <span class="userPSW"><a href="#">Forgot Password?</a></span>
+            </div>
+        </form>
+    </div>
+</header>
+
+<!-- Leave the Script here it has to wait for the modal to load before you can click out of it -->
+<script type="text/javascript" src="About.js"></script>
+</body>
+</html>
