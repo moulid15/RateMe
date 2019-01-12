@@ -1,0 +1,46 @@
+#settingsPageWrapper {
+	font-family: 'Open Sans', serif;
+	display: flex;
+	flex-direction: row;
+}
+
+i {
+	float: right;
+	padding-right: 5px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+}
+
+#sectionsContainer {
+	display: flex;
+	flex-direction: column;
+	color: #0084b4;
+	flex: 1 1 0;
+}
+
+#sectionsContainer li {
+	padding: 1vh;
+	list-style-position: inside;
+	border: 1px solid gray;
+}
+
+#settingsContainer {
+	padding-left: 1vw;
+	flex: 2.5 1 0;
+}
+
+form div:not(:first-child) {
+    display: none;
+}
+
+#profilePic {
+	width: 200px;
+	height: 200px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="settings.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+	<div id="settingsPageWrapper">
+		<div id="sectionsContainer">
+			<ul>
+				<li onclick="show('accountBasicsSection')">Account Basics<i class="fas fa-angle-right"></i></li>
+				<li onclick="show('profileSection')">Profile<i class="fas fa-angle-right"></i></li>
+				<li onclick="show('notificationsSection')">Notifications<i class="fas fa-angle-right"></i></li>
+				<li onclick="show('designSection')">Design<i class="fas fa-angle-right"></i></li>
+				<li onclick="show('otherSection')">Other<i class="fas fa-angle-right"></i></li>
+			</ul>
+		</div>
+		<div id="settingsContainer">
+			<form id="settingsForm">
+				<div id="accountBasicsSection">
+					<h2>Account Basics</h2>
+					<ul>
+						<li>Username <input type="text" name="userName"></li>
+						<li>Email <input type="email" name="emailAddress"></li>
+						<li>Language
+							<select name="language">
+								<option value="english">English</option>
+								<option value="spanish">Spanish</option>
+								<option value="french">French</option>
+							</select>
+						</li>
+						<li>Time Zone
+							<select name="timezone">
+								<option value="pst">PST</option>
+								<option value="mst">MST</option>
+								<option value="cst">CST</option>
+								<option value="est">EST</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+				<div id="profileSection">
+					<h2>Profile</h2>
+					<ul>
+						<li>Change profile picture<br><img id="profilePic" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"><br><input type="file" name="filepath"></li>
+						<li>Change bio<br><textarea name="bioInfo" rows="10" cols="50">Hello.</textarea></li>
+						<li>Setting3</li>
+						<li>Setting4</li>
+					</ul>
+				</div>
+				<div id="notificationsSection">
+					<h2>Notifications</h2>
+					<ul>
+						<li><input type="checkbox" name="pushnotif">Push notifications?</li>
+						<li><input type="checkbox" name="emailnotif">Email notifications</li>
+					</ul>
+				</div>
+				<div id="designSection">
+					<h2>Design</h2>
+					<ul>
+						<li>Theme
+							<select name="theme">
+								<option value="light">Light</option>
+								<option value="dark">Dark</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+				<div id="otherSection">
+					<h2>Other</h2>
+					<ul>
+						<li><input type="checkbox" name="secret">Super secret setting</li>
+					</ul>
+				</div>
+				<button>Save changes</button>
+			</form>
+		</div>
+	</div>
+	<script src="settings.js"></script>
+</body>
+</html>
