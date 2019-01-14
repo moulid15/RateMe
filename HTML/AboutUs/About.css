@@ -13,7 +13,7 @@
 }
 
 #header{
-    padding: 3vh 20vw 3vh 20vw;
+    padding: 3vh 20vw 3vh 17.5vw;
 }
 
 /* Login Stuff */
@@ -165,7 +165,7 @@ main{
 
 /* Encompass sidebar and nav content */
 .nav-container{
-    margin: 5vh 20vw 0 22vw;
+    margin: 5vh 20vw 0 20vw; /*Gray part of the web page */
     padding: 0 1vw 0 1vw;
     border: thin solid rgba(0, 0, 0, 0.1);
     background-color: white;
@@ -174,7 +174,7 @@ main{
 /* SideBar Navigation */
 .sidebar-nav{
     padding-top: 5vh;
-    float:left;
+    float: left;
     height: 100%;
     width: 256px;
     padding-bottom: 50%;
@@ -239,5 +239,24 @@ p{
 
 /* Member's paragraph */
 .about-person{
-    padding-top: 2.5vh;
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+}
+
+footer {
+    padding: 3vh 20vw 3vh 20vw;
+    background-color: rgb(240, 240, 240);
+}
+
+.footer-nav a{
+    font-size: 0.9vw;
+    font-family: 'Raleway', sans-serif;
+    padding-right: 2vw;
+    color: #2374ed;
+}
+
+#footer-copyright{
+    font-size: 0.9vw;
+    font-family: 'Quicksand', sans-serif;
+    float: right;
 }
