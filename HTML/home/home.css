@@ -25,11 +25,10 @@ a:visited{
     color: white;
     width: 180vh;
     height: 50px;
-    left:15vh;
-    right:15vh;
+    left:10vh;
     text-align: center;
     padding:10px;
-    opacity: .5;
+    opacity: .75;
     filter: alpha(opacity=100);
 }
 i{
@@ -54,7 +53,7 @@ nav#sidebar {
     background:black;
     color:white;
     padding: 50px 0px 100%;
-    opacity: 0.5;
+    opacity: 0.75;
     filter: alpha(opacity=50);
 }
 ul.dots * {
