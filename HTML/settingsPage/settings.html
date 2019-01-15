@@ -12,6 +12,7 @@
 		<div id="sectionsContainer">
 			<ul>
 				<li onclick="show('accountBasicsSection')">Account Basics<i class="fas fa-angle-right"></i></li>
+				<li onclick="show('securityAndPrivacySection')">Security and Privacy<i class="fas fa-angle-right"></i></li>
 				<li onclick="show('profileSection')">Profile<i class="fas fa-angle-right"></i></li>
 				<li onclick="show('notificationsSection')">Notifications<i class="fas fa-angle-right"></i></li>
 				<li onclick="show('designSection')">Design<i class="fas fa-angle-right"></i></li>
@@ -23,16 +24,16 @@
 				<div id="accountBasicsSection">
 					<h2>Account Basics</h2>
 					<ul>
-						<li>Username <input type="text" name="userName"></li>
-						<li>Email <input type="email" name="emailAddress"></li>
-						<li>Language
+						<li><span>Username</span><input type="text" name="userName"></li>
+						<li><span>Email</span><input type="email" name="emailAddress"></li>
+						<li><span>Language</span>
 							<select name="language">
 								<option value="english">English</option>
 								<option value="spanish">Spanish</option>
 								<option value="french">French</option>
 							</select>
 						</li>
-						<li>Time Zone
+						<li><span>Time Zone</span>
 							<select name="timezone">
 								<option value="pst">PST</option>
 								<option value="mst">MST</option>
@@ -42,29 +43,38 @@
 						</li>
 					</ul>
 				</div>
+				<div id="securityAndPrivacySection">
+					<h2>Security and Privacy</h2>
+					<ul>
+						<li><span>Current Password</span><input type="password" name="oldPassword"></li>
+						<li><span>New Password</span><input type="password" name="newPassword"></li>
+						<li><span>Opt Out of Advertisements</span><input type="checkbox" name="advertisementOptOut"></li>
+					</ul>
+				</div>
 				<div id="profileSection">
 					<h2>Profile</h2>
 					<ul>
-						<li>Change profile picture<br><img id="profilePic" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"><br><input type="file" name="filepath"></li>
-						<li>Change bio<br><textarea name="bioInfo" rows="10" cols="50">Hello.</textarea></li>
-						<li>Setting3</li>
-						<li>Setting4</li>
+						<li><span>Change profile picture</span><br><!--img id="profilePic" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"><br--><input type="file" name="filepath"></li>
+						<li><span>Change bio</span><br><textarea name="bioInfo" rows="10" cols="50">Hello.</textarea></li>
+						<li><span>Setting3</span><input type="text"></li>
+						<li><span>Setting4</span><input type="text"></li>
 					</ul>
 				</div>
 				<div id="notificationsSection">
 					<h2>Notifications</h2>
 					<ul>
-						<li><input type="checkbox" name="pushnotif">Push notifications?</li>
-						<li><input type="checkbox" name="emailnotif">Email notifications</li>
+						<li><span>Enable push notifications</span><input type="checkbox" name="pushnotif"></li>
+						<li><span>Enable email notifications</span><input type="checkbox" name="emailnotif"></li>
 					</ul>
 				</div>
 				<div id="designSection">
 					<h2>Design</h2>
 					<ul>
-						<li>Theme
+						<li><span>Theme</span>
 							<select name="theme">
 								<option value="light">Light</option>
 								<option value="dark">Dark</option>
+								<option value="vibrant">Vibrant</option>
 							</select>
 						</li>
 					</ul>
@@ -72,10 +82,11 @@
 				<div id="otherSection">
 					<h2>Other</h2>
 					<ul>
-						<li><input type="checkbox" name="secret">Super secret setting</li>
+						<li><span>Beta version opt in</span><input type="checkbox" name="betaOptIn"></li>
+						<li><span>Super secret setting</span><input type="checkbox" name="secret"></li>
 					</ul>
 				</div>
-				<button>Save changes</button>
+				<button id="saveButton">Save changes</button>
 			</form>
 		</div>
 	</div>

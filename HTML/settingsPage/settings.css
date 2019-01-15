@@ -34,14 +34,37 @@ li {
 #settingsContainer {
 	padding-left: 1vw;
 	flex: 2.5 1 0;
+	text-align: center;
 }
 
-form div:not(:first-child) {
+#settingsForm div:not(:first-child) {
     display: none;
 }
 
-#profilePic {
-	width: 200px;
-	height: 200px;
+#settingsForm div ul {
+	width: 75%;
 }
 
+#settingsForm div ul li {
+	display: flex; 
+}
+
+#settingsForm div ul li span {
+	flex: 50%;
+	text-align: right;
+	margin-right: 5vw;
+}
+
+#settingsForm div ul li input, select, textarea {
+	flex: 50%;
+}
+
+#profilePic {
+	width: 15vw;
+	height: 20vh;
+}
+
+#saveButton {
+	display: block;
+	margin: 0 auto;
+}
