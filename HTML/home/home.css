@@ -25,9 +25,9 @@ a:visited{
     color: white;
     width: 180vh;
     height: 50px;
-    left:10vh;
+    left:13vh;
     text-align: center;
-    padding:10px;
+    padding:13px;
     opacity: .75;
     filter: alpha(opacity=100);
 }
